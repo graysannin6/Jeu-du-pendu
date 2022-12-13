@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jeu du Pendu!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/Pendu.js"></script>
+</head>
+
+<body>
+    <h1>Jeu du Pendu!</h1>
+    <header id="just"></header>
+    <canvas id="canv" style="display: none;"></canvas>
+    <img src="Images/jeu-le-pendu.jpg" width="400" height="400">
+        <table border="4" width="700" class="table">
+            <tbody>
+              <tr>
+                <td class="text" style="text-align: right;" colspan="4">
+                    Pointage : <input type="text" id="score" readonly="true" size="3" value="0"><br><br> Erreurs (6) : <input type="text" id="fails" readonly="true" size="3" value="0"></td>
+                <td colspan="7">
+                    <center>
+                        <input type="text" placeholder="Rentrez votre nom" id="playerNameInput" name="fname"><br><br>
+                        <h2 id="playerName">Nom du joueur</h2><br><br>
+                        <input id="display1" readonly=true value="---Jeu du Pendu---">
+                        </input>
+                        <br><br>
+                        <input id="display2" readonly=true value="Click Commencer pour obtenir un mot.">
+                        </input>
+                    </center>
+                </td>
+                <td colspan="2" id="justbutton">
+                    <center>
+                        <input type="button" value="Inscrire Nom" class="button" onclick="setPlayerName();">
+                        <br><br>
+                        <input type="button" value="Commencer" class="button" onclick="Start()">
+                        <br><br>
+                        <input type="button" value="Quitter" class="button" onclick="close_window();return false;">
+                    </center>
+                </td>
+              </tr>
+              <tr>
+                    <td>
+                        <button disabled="true" id="A" onclick="handleGuess('A')">A</button>
+                    </td>
+                    <td>
+                        <button disabled="true" id="B" onclick="handleGuess('B')">B</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="C" onclick="handleGuess('C')">C</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="D" onclick="handleGuess('D')">D</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="E" onclick="handleGuess('E')">E</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="F" onclick="handleGuess('F')">F</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="G" onclick="handleGuess('G')">G</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="H" onclick="handleGuess('H')">H</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="I" onclick="handleGuess('I')">I</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="J" onclick="handleGuess('J')">J</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="K" onclick="handleGuess('K')">K</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="L" onclick="handleGuess('L')">L</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="M" onclick="handleGuess('M')">M</button>
+                        </td>
+              </tr>
+              <tr>
+                    <td>
+                        <button disabled="true" id="N" onclick="handleGuess('N')">N</button>
+                    </td>
+                    <td>
+                        <button disabled="true" id="O" onclick="handleGuess('O')">O</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="P" onclick="handleGuess('P')">P</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="Q" onclick="handleGuess('Q')">Q</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="R" onclick="handleGuess('R')">R</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="S" onclick="handleGuess('S')">S</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="T" onclick="handleGuess('T')">T</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="U" onclick="handleGuess('U')">U</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="V" onclick="handleGuess('V')">V</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="W" onclick="handleGuess('W')">W</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="X" onclick="handleGuess('X')">X</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="Y" onclick="handleGuess('Y')">Y</button>
+                        </td>
+                    <td>
+                        <button disabled="true" id="Z" onclick="handleGuess('Z')">Z</button>
+                        </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="images">
+            <img id="Image1" width="100" height="100" src="Images/image1.jpg"></img>
+            <img id="Image2" width="100" height="100" src="Images/image2.jpg"></img>
+            <img id="Image3" width="100" height="100" src="Images/image3.jpg"></img>
+            <img id="Image4" width="100" height="100" src="Images/image4.jpg"></img>
+            <img id="Image5" width="100" height="100" src="Images/image5.jpg"></img>
+            <img id="Image6" width="100" height="100" src="Images/image6.jpg"></img>
+         </div>
+    
+</body>
+</html>
